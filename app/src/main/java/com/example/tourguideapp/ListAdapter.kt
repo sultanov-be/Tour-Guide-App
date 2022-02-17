@@ -86,29 +86,3 @@ class ListAdapter(var list: List<Place>) : RecyclerView.Adapter<ListAdapter.View
         }
     }
 }
-
-
-//class ListAdapter(private val context: Activity, private val arrayList: ArrayList<Place>) :
-//    ArrayAdapter<Place>(context, R.layout.list_item, arrayList) {
-//
-//    override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
-//
-//        val inflater: LayoutInflater = LayoutInflater.from(context)
-//        val view: View = inflater.inflate(R.layout.list_item, null)
-//
-//        val imageView: ImageView = view.findViewById(R.id.place_img)
-//        val place: TextView = view.findViewById(R.id.place_text)
-//        val type: TextView = view.findViewById(R.id.type_text)
-//        val adress: TextView = view.findViewById(R.id.adress_text)
-//        val time: TextView = view.findViewById(R.id.time_text)
-//
-//        imageView.setImageResource(arrayList[position].imgId)
-//        place.text = arrayList[position].place
-//        type.text = arrayList[position].type
-//        adress.text = arrayList[position].adress
-//        time.text = arrayList[position].time
-//
-//        return view
-//
-//    }
-//}

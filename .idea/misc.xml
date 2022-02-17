@@ -4,6 +4,9 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Android/TourGuideApp/app/src/main/res/drawable-v24/button_image.xml" value="0.1" />
+        <entry key="..\:/Android/TourGuideApp/app/src/main/res/drawable/ic_cyclone_image.xml" value="0.1" />
+        <entry key="..\:/Android/TourGuideApp/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.1" />
+        <entry key="..\:/Android/TourGuideApp/app/src/main/res/drawable/ic_logo.xml" value="0.1" />
         <entry key="..\:/Android/TourGuideApp/app/src/main/res/drawable/rectangle.xml" value="0.1" />
         <entry key="..\:/Android/TourGuideApp/app/src/main/res/font/open_sans.xml" value="0.1" />
         <entry key="..\:/Android/TourGuideApp/app/src/main/res/layout/activity_main.xml" value="0.17300724637681159" />
@@ -11,7 +14,9 @@
         <entry key="..\:/Android/TourGuideApp/app/src/main/res/layout/fragment_cinemas.xml" value="0.4466666666666667" />
         <entry key="..\:/Android/TourGuideApp/app/src/main/res/layout/fragment_fitnesses.xml" value="0.1" />
         <entry key="..\:/Android/TourGuideApp/app/src/main/res/layout/fragment_restaurants.xml" value="0.1693840579710145" />
-        <entry key="..\:/Android/TourGuideApp/app/src/main/res/layout/list_item.xml" value="0.3333333333333333" />
+        <entry key="..\:/Android/TourGuideApp/app/src/main/res/layout/list_item.xml" value="0.14666666666666667" />
+        <entry key="..\:/Android/TourGuideApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
+        <entry key="..\:/Android/TourGuideApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1" />
       </map>
     </option>
   </component>
