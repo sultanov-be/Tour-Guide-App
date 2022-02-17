@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/phone_number"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/place_img"
+                android:layout_width="98dp"
+                android:layout_height="84dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="center"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@color/black"
+                tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+            <TextView
+                android:id="@+id/place_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Cyclone"
+                android:textColor="#2A8CFF"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/place_img"
+                app:layout_constraintTop_toTopOf="@+id/place_img" />
+
+            <TextView
+                android:id="@+id/type_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans"
+                android:text="Ресторан"
+                android:textColor="#ADAEAE"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@+id/place_text"
+                app:layout_constraintTop_toBottomOf="@+id/place_text" />
+
+            <TextView
+                android:id="@+id/adress_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/open_sans"
+                android:text="Проспект Чуй 136"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@+id/type_text"
+                app:layout_constraintTop_toBottomOf="@+id/type_text" />
+
+            <TextView
+                android:id="@+id/time_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/open_sans"
+                android:text="Открыто до 05:00"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@+id/adress_text"
+                app:layout_constraintTop_toBottomOf="@+id/adress_text" />
+
+            <ImageView
+                android:id="@+id/imageButton"
+                android:layout_width="14dp"
+                android:layout_height="7dp"
+                android:layout_marginEnd="6dp"
+                android:layout_marginBottom="19dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:srcCompat="@drawable/button_image" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/expandableLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="@+id/imageButton"
+                app:layout_constraintStart_toStartOf="@+id/place_img"
+                app:layout_constraintTop_toBottomOf="@id/place_img">
+
+
+                <ImageView
+                    android:id="@+id/info_img"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginStart="4dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+
+                    app:srcCompat="@drawable/info_img" />
+
+                <TextView
+                    android:id="@+id/info_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:fontFamily="@font/open_sans"
+                    android:text="Ресторан европейской кухни\nСредний чек 800 с\nОткрыто до 05:00"
+                    android:textColor="#ADAEAE"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toEndOf="@+id/info_img"
+                    app:layout_constraintTop_toTopOf="@+id/info_img" />
+
+                <ImageView
+                    android:id="@+id/location_icon"
+                    android:layout_width="11dp"
+                    android:layout_height="16dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="30dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/info_text"
+                    app:srcCompat="@drawable/location_img" />
+
+                <TextView
+                    android:id="@+id/extra_location_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans"
+                    android:text="Проспект Чуй 136"
+                    android:textColor="#2A8CFF"
+                    app:layout_constraintStart_toStartOf="@+id/info_text"
+                    app:layout_constraintTop_toTopOf="@+id/location_icon" />
+
+                <ImageView
+                    android:id="@+id/call_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="17dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/extra_location_text"
+                    app:srcCompat="@drawable/call_img" />
+
+                <TextView
+                    android:id="@+id/call_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans"
+                    android:text="+996 505 505 505"
+                    android:textColor="#2A8CFF"
+                    app:layout_constraintStart_toStartOf="@+id/extra_location_text"
+                    app:layout_constraintTop_toTopOf="@+id/call_icon" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:id="@+id/myRectangleView"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/rectangle"
+        app:layout_constraintEnd_toEndOf="@+id/card_view"
+        app:layout_constraintStart_toStartOf="@+id/card_view"
+        app:layout_constraintTop_toBottomOf="@+id/card_view" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
