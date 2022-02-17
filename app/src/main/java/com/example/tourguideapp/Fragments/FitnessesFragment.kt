@@ -37,7 +37,7 @@ class FitnessesFragment : Fragment() {
                 "Студия фитнеса и танцев",
                 "Ул. Исанова 41/1",
                 "Открыто до 22:00",
-                R.drawable.ic_cyclone_image,false,
+                R.drawable.fitness_beauty_img,false,
                 "Что то связанное со спортом",
                 "Ул. Исанова 41/1",
                 "+996 555 160 301",
