@@ -14,6 +14,9 @@ import com.example.tourguideapp.R
 
 class RestaurantsFragment : Fragment() {
 
+// I understand that it better to use StringArray to store strings of extra_info,
+// but I have no idea what I should type in other places, that's why I just wrote the info in listInfo
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -27,9 +30,9 @@ class RestaurantsFragment : Fragment() {
                 "Ресторан",
                 "Проспект Чуй 136",
                 "Открыто до 05:00",
-                R.drawable.ic_cyclone_image,
+                R.drawable.restaurant_cyclone_img,
                 false,
-                "Открыто до 05:00",
+                "Rесторан европейской кухни\n"+"Средний чек 800 с\n"+"Открыто до 05:00",
                 "Проспект Чуй 136",
                 "+996 505 505 505",
             ),
@@ -38,7 +41,7 @@ class RestaurantsFragment : Fragment() {
                 "Ресто-чайхана",
                 "ул. Льва Толстого, 102/4",
                 "Открыто до 02:00",
-                R.drawable.ic_cyclone_image,
+                R.drawable.restaurant_anar_img,
                 false,
                 "В первый раз слышу",
                 "ул. Льва Толстого, 102/4",
@@ -49,9 +52,9 @@ class RestaurantsFragment : Fragment() {
                 "Ресто-чайхана",
                 "ул. К. Баялинова, 131",
                 "Открыто до 23:00",
-                R.drawable.ic_cyclone_image,
+                R.drawable.restaurant_kazan_img,
                 false,
-                "Открыто до 23:00",
+                "В первый раз слышу",
                 "ул. К. Баялинова, 131",
                 "+996 505 505 505",
             ),
@@ -60,10 +63,10 @@ class RestaurantsFragment : Fragment() {
                 "Ресто-чайхана",
                 "ул. Иса Ахунбаева 17А",
                 "Открыто до 24:00",
-                R.drawable.ic_cyclone_image,
+                R.drawable.restaurant_barhat_img,
                 false,
-                "Открыто до 23:00",
-                "ул. Иса Ахунбаева 17А",
+                "В первый раз слышу",
+                "",
                 "+996 505 505 505",
             )
         )

@@ -4,10 +4,10 @@
     android:id="@+id/cinemas_scroll"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingBottom="40dp"
     tools:context=".Fragments.RestaurantsFragment">
 
     <androidx.recyclerview.widget.RecyclerView
-
         android:id="@+id/restaurant_recycler"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

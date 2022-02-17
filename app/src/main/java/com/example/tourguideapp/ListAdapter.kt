@@ -8,12 +8,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
-import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
-import androidx.core.content.ContextCompat.startActivity
-import androidx.core.content.ContextCompat.startActivity
-import androidx.core.content.ContextCompat.startActivity
-
 
 class ListAdapter(var list: List<Place>) : RecyclerView.Adapter<ListAdapter.ViewHolder>() {
 
@@ -36,12 +31,27 @@ class ListAdapter(var list: List<Place>) : RecyclerView.Adapter<ListAdapter.View
         holder.itemType.text = onePlace.type
         holder.itemImage.setImageResource(onePlace.imgId)
         holder.location.text = onePlace.adress
+        holder.extraInfo.text = onePlace.extra_info
+        holder.locationTouch.text = onePlace.adress
+        holder.numberTouch.text = onePlace.numberTouch
 
         val isVisible: Boolean = onePlace.visibility
         holder.expandableLayout.visibility = if (isVisible) View.VISIBLE else View.GONE
+        holder.location.visibility = if (isVisible) View.GONE else View.VISIBLE
 
         holder.moreDetail.setOnClickListener {
+            if (holder.location.visibility == View.GONE) {
+                holder.itemTitle.textSize = 20f
+                holder.itemType.textSize = 18f
+                holder.time.textSize = 18f
+            } else {
+                holder.itemTitle.textSize = 16f
+                holder.time.textSize = 14f
+                holder.itemType.textSize = 14f
+            }
+
             onePlace.visibility = !onePlace.visibility
+
             notifyItemChanged(position)
         }
 
@@ -71,6 +81,7 @@ class ListAdapter(var list: List<Place>) : RecyclerView.Adapter<ListAdapter.View
         var moreDetail: ImageView
         var locationTouch: TextView
         var numberTouch: TextView
+        var extraInfo: TextView
 
 
         init {
@@ -83,6 +94,7 @@ class ListAdapter(var list: List<Place>) : RecyclerView.Adapter<ListAdapter.View
             moreDetail = itemView.findViewById(R.id.imageButton)
             locationTouch = itemView.findViewById(R.id.extra_location_text)
             numberTouch = itemView.findViewById(R.id.call_text)
+            extraInfo = itemView.findViewById(R.id.info_text)
         }
     }
 }
